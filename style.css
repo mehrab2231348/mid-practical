@@ -1,0 +1,153 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ff6600;
+}
+
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.home-images img {
+    margin: 0.5em;
+    width: 150px;
+    height: auto;
+}
+
+
+
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center; /* Center-aligns text and elements inside */
+}
+
+.product-item img {
+    display: block;
+    margin: auto;
+    width: auto; /* or any width you prefer */
+    max-width: 150px; /* Limits the maximum width */
+    height: auto;
+}
+
+
+
+
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.contact-content form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: 1em;
+}
+
+.contact-content input, .contact-content textarea {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-content button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.8em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.contact-content button:hover {
+    background-color: #ff6600;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 0.9em;
+}
+
+
+body {
+    padding-bottom: 60px; /* Adjust padding to fit the footer height */
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+
+.home-images img {
+    width: auto;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
+}
+
+.home-images img:hover {
+    transform: scale(1.2); /* Zoom in the image by 20% */
+}
